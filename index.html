@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>CSS Background Image</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        .header {
+            height: 70px;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Apply background image to the entire body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            /* background-image: url('Background.png'); */
+            /* background-color: black; */
+            /* Image file */
+            background-size: contain;
+            /* Ensure the image covers the entire area */
+            background-position: center;
+            /* Center the image */
+            background-repeat: no-repeat;
+            /* Avoid image repetition */
+
+            /* Full viewport height */
+        }
+
+        /* Style the content */
+        .content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+            /* Add some text shadow for better readability */
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+        }
+
+        .hr {
+            border-bottom: 2px solid cyan;
+        }
+
+        .logos {
+            height: 150px;
+        }
+
+        .calabuza {
+            height: 150px;
+            position: absolute;
+            bottom: 0;
+            right: 40%;
+        }
+
+        .bg {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            z-index: -999;
+            max-height: 80vh;
+            width: 100%;
+            background-attachment: fixed;
+            background-size: contain;
+        }
+        .btn-rg{
+            color: white;
+            background-color: red;
+            border: 2px solid cyan;
+            padding: 15px;
+            padding-right: 35px;
+            padding-left: 35px;
+            text-decoration: none;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+        }
+        .footer{
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <p class="text-center">
+                <img src="./header.png" class="header text-center" />
+            </p>
+        </header>
+        <p class="mt-5">
+            Dear Customer,
+            <br />
+            <br />
+            We are excited to invite you to the Cyber Security Summit, an exclusive event organized by Altaqnya For Data
+            & Communications in collaboration with our esteemed partners: Paloalto, F5, SOCRADAR, RSA, THALES, and
+            Tenable, along with our VAD, MCS. The event will take place at the Hilton Istanbul Bomonti from October 27
+            to October 31.
+            <br />
+            <br />
+            This highly anticipated summit will bring together top experts in cybersecurity to share valuable insights
+            on the latest trends, challenges, and cutting-edge solutions for safeguarding critical infrastructures.
+        </p>
+        <div class="hr"></div>
+
+        <p class="mt-5">
+            Here's a glimpse of our agenda:
+        <ul>
+            <li> Oct 27th: Arraving</li>
+            <li> Oct 28th: Introduction</li>
+            <li>Oct 29th: Paloalto , F5 Sessions (Full Day) </li>
+            <li> Oct 30th: SOCRADAR, RSA, THALES, and Tenable Sessions (Full Day) </li>
+            <li>Oct 31st: Departure </li>
+        </ul>
+        </p>
+
+        <p class="text-center mt-5">
+            <a href="#" class="btn-rg"> <b>Register Now</b></a>
+        </p>
+
+
+        <p class="footer mt-5">
+            This invite is exclusive and not transferable, Please register befoure Sep 19th 2024 to secure your spot at
+            this exclusive event.
+        </p>
+        <div class="hr"></div>
+
+        <header>
+            <p class="text-center mt-5">
+                <img src="./logos.png" class="logos text-center" />
+            </p>
+        </header>
+
+        <header>
+            <p class="text-center">
+                <img src="./calabuza-02.png" class="calabuza text-center" />
+            </p>
+        </header>
+
+        <header>
+            <p class="text-center">
+                <img src="./Background.png" class="bg" />
+            </p>
+        </header>
+    </div>
+   
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+    integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+</html>
